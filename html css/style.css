@@ -63,7 +63,6 @@ ul{
     display: flex;
     align-items: center;
 
-
 }
 .hover-link{
     color: var(--primary-text-color);
@@ -109,7 +108,6 @@ ul{
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
-
 }
 .company-logo img{
     width: 200px;
