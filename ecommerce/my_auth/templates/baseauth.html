@@ -14,6 +14,9 @@
   <meta name="ecommerce website we deliver product in 1 hours" content="">
   <meta name="Amazon,flipcart,selling,products" content="">
  
+  {% comment %} authcss {% endcomment %}
+  {% comment %} <link rel="stylesheet" href="{% static 'css/authstyle.css' %}"> {% endcomment %}
+
   <!-- Favicons -->
   <link href="{% static "assets/img/favicon.png" %}" rel="icon">
   <link href="{% static "assets/img/apple-touch-icon.png" %}" rel="apple-touch-icon">
@@ -33,18 +36,11 @@
   <!-- Main CSS File -->
   <link href="{% static "assets/css/main.css" %}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Tempo
-  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top bg-secondary">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -53,7 +49,7 @@
         <h1 class="sitename">shop cart</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu ">
         <ul>
           <li><a href="/" class="active">Home</a></li>
           <li><a href="/about">About</a></li>
@@ -79,87 +75,15 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero login " class="hero section bg-info ">
 
-      <img src="{% static "assets/img/hero-bg.jpg" %}" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Welcome to Shopping Car</h2>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <a href="/shop" class="btn-get-started">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    {% block body %}
-    
-    {% endblock body %}
-
+    {% comment %} <img src="{% static "assets/img/hero-bg.jpg" %}" alt="" data-aos="fade-in"> {% endcomment %}
+        {% block bodyforms %}
+        
+        
+        {% endblock bodyforms %}
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Tempo</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Tempo</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-       Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
