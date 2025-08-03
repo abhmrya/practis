@@ -45,8 +45,5 @@ g=f[::-1]
 print(g)
 h=[]
 for i in g:
-    print(i)
-    for k in i:
-        i=k[::-1]
-        h.append(i)
+    h.append(i[::-1])
 print(h)
