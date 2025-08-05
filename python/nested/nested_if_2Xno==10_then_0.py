@@ -21,4 +21,3 @@ for i in ls2:
     out2.append(out3)
     print(out3)
 print(out2)
-
