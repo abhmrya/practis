@@ -1,10 +1,9 @@
 lst=['ab','cd','ef','gh']
+
 print(type(lst))
-last=lst[-1]
+lst.remove(-1)
+print(lst)
 print(last)
 print(type(last))
-# newlist=last.append(last)
-# print(newlist)
-new=[]
-for i in :
-    print(i)
+newlist=lst.append(last)
+print(newlist)
